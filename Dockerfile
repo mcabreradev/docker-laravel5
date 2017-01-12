@@ -1,5 +1,5 @@
 FROM php:7.0-apache
-MAINTAINER Chris McKenzie <chris.mckenzie@thecontrolgroup.com>
+MAINTAINER Tony Lea <tony.lea@thecontrolgroup.com>
 
 EXPOSE 80
 
@@ -22,3 +22,8 @@ ENV COMPOSER_HOME=/var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
+
+RUN /bin/bash -c "/usr/bin/mysqld_safe &" && \
+  sleep 5 && \
+  mysql -u root -e "CREATE DATABASE testdb" && \
+  mysql -u root mydb < /var/www/html/storage/test_db.sql
