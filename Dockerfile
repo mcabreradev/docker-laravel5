@@ -22,3 +22,7 @@ ENV COMPOSER_HOME=/var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
+
+RUN 
+  mysql -u root -e "CREATE DATABASE testdb" && \
+  mysql -u root testdb < /var/www/html/storage/test_db.sql
