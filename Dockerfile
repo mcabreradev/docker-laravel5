@@ -22,8 +22,3 @@ ENV COMPOSER_HOME=/var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
-
-RUN /bin/bash -c "/usr/bin/mysqld_safe &" && \
-  sleep 5 && \
-  mysql -u root -e "CREATE DATABASE testdb" && \
-  mysql -u root mydb < /var/www/html/storage/test_db.sql
