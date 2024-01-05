@@ -1,7 +1,8 @@
 repo_name: mcabreradev/docker-laravel5
 report_id: 2321a23256c56ac84c134cd249647646
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-14T15:28:56+00:00'
+timestamp: '2024-01-05T08:44:05+00:00'
 requested_by: tnylea
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/mcabreradev/docker-laravel5
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -25,6 +27,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/mcabreradev/docker-laravel5
   detection_source: Repo Metadata
 - name: PhpSpec
   description: A  toolset for behavior driven development
@@ -35,7 +38,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/3502/6b9dfb07681dee602dbdf75d9393f07c_400x400.png
-  detection_source_url: Dockerfile
+  detection_source_url: https://github.com/mcabreradev/docker-laravel5/blob/master/Dockerfile
   detection_source: Dockerfile
   last_updated_by: Tony Lea
   last_updated_on: 2017-01-12 15:59:38.000000000 Z
